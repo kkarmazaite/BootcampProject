@@ -1,0 +1,483 @@
+*{
+	border:1px solid black;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border:none;
+	list-style-type: none;
+	text-decoration: none;
+	font-family:  Verdana, Segoe, sans-serif;
+}
+p{
+	font-size: 15px;
+}
+/*Menu*/
+nav{
+	height: 8vh;
+	text-transform: uppercase;
+	z-index: 10;
+	top:0;
+	background-color: #fff;
+	box-shadow: 0px 0px 3px 2px #888;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items:center;
+	font-size: 14px;
+	padding: 15px;
+}
+#menu-symbol{
+	display: none;
+}
+#menu-symbol img{
+	width: auto;
+	height: 20px;
+}
+nav a{
+	color: #000;
+}
+nav i{
+	margin: 0 4px;
+}
+#logo{
+	display: flex;
+	align-content: center;
+}
+.burger {
+ border: none;
+ background: none;
+display: none;
+}
+.burger span{
+  border: 2px solid black;
+  margin: 3px 0;
+  border-radius: 15px;
+  width: 30px;
+  display: block;
+}
+#main-nav {
+	display: flex;
+	margin-left: auto;
+}
+#main-nav a{
+	margin: 0 8px;
+	padding: 5px;
+}
+#main-nav a:hover{
+	background-color: #bbb;
+}
+/*Menu end*/
+/*Header*/
+.wrapper{
+	padding: 0 30px;
+	margin: auto;
+}
+header .wrapper{
+	display: flex;
+ 	align-items: center;
+ 	justify-content: flex-start;
+}
+header{
+	margin-top: 8vh;
+	padding: 0 30px;
+	height: 92vh;
+	width: 100%;
+	background:url(images/header.jpeg) no-repeat center;
+	background-size: cover;
+	display: flex;
+ 	
+ 	justify-content: center;
+ 	flex-direction:column;
+ 	color: #fff;
+}
+header h1{
+	font-size: 50px;
+	font-weight: 400;
+	margin: 100px 0 40px 0;
+}
+header .button{
+	padding: 20px 35px;
+	margin: 40px 0 200px 0;
+	display: block;
+	width: 300px;
+	color: rgba(0,0,0,1);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+header .button:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+header .social a{
+	color: rgba(255, 255, 255, 0.5);
+}
+header .social a:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
+header .social ul li{
+	display: inline;
+}
+/*Header end*/
+section{
+	padding: 120px 30px;
+}
+section h1{
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-weight: 400;
+}
+section h2{
+	margin: 20px 0;
+	font-weight: 400;
+}
+/*About section*/
+#about{
+	text-align: center;
+}
+.features{
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin: 50px 0 0 0;
+}
+.features .title{
+	font-size: 16px;
+}
+.one-fourth{
+	flex-basis: 24%; 
+	margin-bottom: 12px; 
+	text-align: center;
+}
+.one-fourth img{
+	width: 100%;
+	height: auto;
+}
+.features .one-fourth{
+	padding: 0 5px;
+}
+.features .one-fourth i{
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+/*End of about section*/
+/*Design section*/
+#design{
+	background-color: #eee;
+	display: flex;
+	flex-wrap:wrap;
+}
+#design div{
+	flex-basis: 50%;
+}
+#design .text{
+	padding-right: 20px;
+}
+#design div img{
+	height: 100%;
+	width: 100%;
+}
+#design .button{
+	padding: 10px 20px;
+	display: block;
+	width: 220px;
+	color: #fff;
+	background-color: #000;
+}
+#design .button:hover{
+	background-color: #888;
+}
+#design i{
+	margin: 0 10px;
+}
+/*End of design section*/
+/*Team section*/
+#team{
+	text-align: center;
+}
+.team{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#job-title{
+	color: #bbb;
+}
+.team .one-fourth{
+	text-align: left;
+	box-shadow: 0px 0px 3px 2px #ccc;
+}
+
+.team .one-fourth div{
+	padding: 10px;
+}
+.job-title{
+	color: #aaa;
+}
+.team a{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	display: block;
+	background-color: #eee;
+	color: #000;
+}
+.team i{
+	margin: 0 10px;
+}
+/*End of team section*/
+/*Count section*/
+#count{
+	background-color: #555;
+	color: #fff;
+	padding: 40px;
+}
+.count{
+	display: flex;	
+	flex-wrap:wrap;
+}
+.count h1{
+	font-size: 30px;
+}
+.count sup{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+/*End of count section*/
+/*Work section*/
+#work{
+	text-align: center;
+}
+.projects{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin: 80px 0 0 0;
+}
+/*End of work section*/
+#skills{
+	background-color: #eee;
+	display: flex;
+	flex-wrap:wrap;
+}
+#skills div{
+	flex-basis: 50%;
+}
+#skills .text{
+	padding-right: 40px;
+}
+#skills i{
+	margin-right: 10px;
+}
+.skill{
+	margin-top: 20px;
+}
+.skill progress{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	background-color: red;
+}
+progress::-webkit-progress-value { background: #555; }
+.skill progress:before{
+	position: absolute;
+	color: #fff;
+	content: attr(value)'%';
+}
+/*End of skills section*/
+/*Pricing section*/
+#pricing{
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+}
+.pricing{
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content:space-between;
+	margin-top: 80px;
+}
+.one-third{
+	flex-basis: 32%; 
+	background-color: #eee;
+	color: #000;
+}
+.pricing .title{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	color: #fff;
+}
+.plan li{
+	background-color: #fff;
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+.plan li h1{
+	font-size: 30px;
+}
+.plan li p{
+	color: #777;
+}
+.plan .button{
+	padding: 15px 5px;
+	margin: 20px auto;
+	display: block;
+	width: 100px;
+	color: #fff;
+	background-color: #000;
+}
+#pro .title{
+	height: 140px;
+	background-color: #f2453d;
+}
+/*End of pricing section*/
+/*Contact section*/
+#contact{
+	text-align: center;
+	background-color: #eee;
+}
+.contact{
+	margin-top: 80px; 
+	display: flex;
+	flex-wrap:wrap;
+	text-align: left;
+	justify-content:space-between;
+}
+.contact div{
+	flex-basis: 48%;
+}
+.contact i{
+	margin-right: 20px;
+	font-size: 25px;
+}
+.contact input{
+	width: 100%;
+	height: 40px;
+	margin: 10px 0;
+	padding: 10px;
+	border
+}
+.contact button{
+	padding: 10px 0;
+	margin: 10px 0;
+	display: block;
+	width: 170px;
+	color: #fff;
+	background-color: #000;
+	text-transform: uppercase;
+}
+.contact button i{
+	font-size: 15px;
+	margin-right: 10px; 
+}
+/*End of contact section*/
+/*Footer*/
+footer{
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	padding: 40px 0;
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	flex-direction:column;
+}
+footer a{
+	color: #fff;
+}
+footer .button{
+	background-color: #fff;
+	color: #000;
+	padding: 10px;
+}
+footer .button i{
+	margin-right: 10px;
+}
+footer ul li{
+	display: inline;
+}
+footer p{
+	font-size: 12px;
+}
+footer .social{
+	font-size: 17px;
+}
+ /* Small Devices, Tablets */
+    @media only screen and (max-width : 780px) {
+    	header h1{
+			margin: 50px 0 40px 0;
+		}
+    	header .button{
+    		padding: 15px 35px;
+			margin-bottom: 250px;
+		}
+       .one-fourth{
+			flex-basis: 49%; 
+		}  
+		.team .one-fourth{
+			margin-bottom: 40px;
+		}  
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 600px) {
+
+    	.burger:focus + #main-nav{
+    		max-height: 1000px;
+    		visibility: visible;
+    	}
+    	.one-fourth, #design div, #skills div, .one-third, .contact div, #map{
+    		margin-top: 10px;
+			flex-basis: 100%; 
+		}  
+		.burger{
+			display: inline-block;
+			margin-left: auto;
+		}
+		#main-nav{
+			
+			width: 100%;
+			display: block;
+			text-align: center;
+			visibility: hidden;
+			overflow: hidden;
+			max-height: 0;
+			transition: 0.5s; 
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		#main-nav li{
+			background-color: #fff;
+			padding: 10px 0;
+			border-top: 1px solid black;
+		}
+		#main-nav li a{
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		header{
+			padding: 0 40px;
+
+		}
+		header h1{
+			font-size: 32px;
+			line-height: 60px;
+			margin: 50px 0 20px 0;
+		}
+		header p{
+			font-size: 18px;
+			line-height: 40px;
+		}
+		header .button{
+			padding: 10px 35px;
+			margin: 30px 0 200px 0;
+			display: block;
+			width: 300px;
+			color: rgba(0,0,0,1);
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+    }
+
